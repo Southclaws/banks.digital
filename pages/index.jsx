@@ -89,6 +89,15 @@ const Page = ({ headers, data }) => {
             easily decide which of these new banks might be your next. The sign-up and switching journeys are often very
             quick, so it's perfectly fine to try a few and stick with what you like.
           </p>
+          <p>
+            Have suggestions?{" "}
+            <a
+              className="bg-black-90 washed-blue hover-black-90 hover-bg-washed-blue"
+              href="https://docs.google.com/spreadsheets/d/1b081m9EBaib-LQaYmYC3oMY0Z-yNY9SI_JwqIC50fpI/edit?usp=sharing"
+            >
+              Leave your comments here!
+            </a>
+          </p>
         </article>
         <div className="overflow-x-scroll">
           <Table headers={headers} data={data} />
