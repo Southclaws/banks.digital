@@ -71,7 +71,6 @@ const Page = ({ headers, data }) => {
       <header className="pt3 mh2 mh7-l">
         <h1 className="pa0 ma0">
           <span className="bg-black-90 lh-solid washed-blue ph2 pv0 tracked-tight f1">DIGITAL BANKING</span>{" "}
-          <span className="lh-solid washed-blue ph4 pv0 f1 dn di-l">💻 📱 🏦</span>
         </h1>
         <h2 className="pa0 ma0">
           <span className="bg-black-90 lh-solid washed-blue ph2 pv1 tracked-tight f4">Feature comparison</span>
@@ -79,6 +78,7 @@ const Page = ({ headers, data }) => {
       </header>
       <main>
         <article className="pv2 mh2 mh7-l measure">
+          <p>💻 📱 🏦</p>
           <p>
             Digital banks have taken Europe by storm in recent years. Fast growing startups like Monzo and Revolut have
             drawn customers away from traditional big banks by boasting modern interfaces, better experiences and
