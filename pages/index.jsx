@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { getData } from "./data";
+import { getData } from "../src/data";
 
 const YES = "✅";
 const NO = "⛔";
@@ -11,8 +11,8 @@ const TableHeader = ({ children }) => (
   </th>
 );
 
-const TableCell = ({ children }) => (
-  <td className="pv2 ph1 b--black-20" align="center">
+const TableCell = ({ children, label }) => (
+  <td className={label ? "tr black-60 f7" : "tc f5"} align="center">
     {children}
   </td>
 );
@@ -41,7 +41,7 @@ const TransposedRows = ({ data }) => {
       {rows.map(f => (
         <tr>
           {f.map((b, i) => (
-            <td className={i == 0 ? "tr black-60 f7" : "tc f5"}>{b}</td>
+            <TableCell label={i == 0}>{b}</TableCell>
           ))}
         </tr>
       ))}
