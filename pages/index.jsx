@@ -67,45 +67,47 @@ const Table = ({ data }) => {
 
 const Page = ({ headers, data }) => {
   return (
-    <div className="mw9 center pa0 pt5-ns flex flex-column helvetica bg-light-green">
-      <header className="pt3 mh2 mh7-l">
-        <h1 className="pa0 ma0">
-          <span className="bg-black-90 lh-solid washed-blue ph2 pv0 tracked-tight f1">DIGITAL BANKING</span>{" "}
-        </h1>
-        <h2 className="pa0 ma0">
-          <span className="bg-black-90 lh-solid washed-blue ph2 pv1 tracked-tight f4">Feature comparison</span>
-        </h2>
-      </header>
-      <main>
-        <article className="pv2 mh2 mh7-l measure">
-          <p>💻 📱 🏦</p>
-          <p>
-            Digital banks have taken Europe by storm in recent years. Fast growing startups like Monzo and Revolut have
-            drawn customers away from traditional big banks by boasting modern interfaces, better experiences and
-            innovating on an age old and traditionally slow-moving industry.
-          </p>
-          <p>
-            This is great news, because this means more competition in the banking space. This page aims to help you
-            easily decide which of these new banks might be your next. The sign-up and switching journeys are often very
-            quick, so it's perfectly fine to try a few and stick with what you like.
-          </p>
-          <p>
-            Have suggestions?{" "}
-            <a
-              className="bg-black-90 washed-blue hover-black-90 hover-bg-washed-blue"
-              href="https://docs.google.com/spreadsheets/d/1b081m9EBaib-LQaYmYC3oMY0Z-yNY9SI_JwqIC50fpI/edit?usp=sharing"
-            >
-              Leave your comments here!
-            </a>
-          </p>
-        </article>
-        <div className="overflow-x-scroll">
-          <Table headers={headers} data={data} />
-        </div>
-      </main>
-      <footer className="pa2 mh7-l ma2 f7 tc">
-        <a href="https://southcla.ws">Made with ❤️ by Southclaws</a>
-      </footer>
+    <div className="center pa0 pt5-l flex flex-column helvetica bg-light-green">
+      <div className="fffmw9">
+        <header className="pt3 mh2 mh7-l">
+          <h1 className="pa0 ma0">
+            <span className="bg-black-90 lh-solid washed-blue ph2 pv0 tracked-tight f1">DIGITAL BANKING</span>{" "}
+          </h1>
+          <h2 className="pa0 ma0">
+            <span className="bg-black-90 lh-solid washed-blue ph2 pv1 tracked-tight f4">Feature comparison</span>
+          </h2>
+        </header>
+        <main>
+          <article className="pv2 mh2 mh7-l measure">
+            <p>💻 📱 🏦</p>
+            <p>
+              Digital banks have taken Europe by storm in recent years. Fast growing startups like Monzo and Revolut
+              have drawn customers away from traditional big banks by boasting modern interfaces, better experiences and
+              innovating on an age old and traditionally slow-moving industry.
+            </p>
+            <p>
+              This is great news, because this means more competition in the banking space. This page aims to help you
+              easily decide which of these new banks might be your next. The sign-up and switching journeys are often
+              very quick, so it's perfectly fine to try a few and stick with what you like.
+            </p>
+            <p>
+              Have suggestions?{" "}
+              <a
+                className="bg-black-90 washed-blue hover-black-90 hover-bg-washed-blue"
+                href="https://docs.google.com/spreadsheets/d/1b081m9EBaib-LQaYmYC3oMY0Z-yNY9SI_JwqIC50fpI/edit?usp=sharing"
+              >
+                Leave your comments here!
+              </a>
+            </p>
+          </article>
+          <div className="overflow-x-scroll">
+            <Table headers={headers} data={data} />
+          </div>
+        </main>
+        <footer className="pa2 mh7-l ma2 f7 tc">
+          <a href="https://southcla.ws">Made with ❤️ by Southclaws</a>
+        </footer>
+      </div>
     </div>
   );
 };
