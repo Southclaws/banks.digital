@@ -56,7 +56,7 @@ const Table = ({ data }) => {
         <tr>
           <TableHeader />
           {data.map(v => (
-            <TableHeader>{v.Name}</TableHeader>
+            <TableHeader key={v.Name}>{v.Name}</TableHeader>
           ))}
         </tr>
       </thead>
@@ -71,10 +71,10 @@ const Page = ({ headers, data }) => {
       <div className="fffmw9">
         <header className="pt3 mh2 mh7-l">
           <h1 className="pa0 ma0">
-            <span className="bg-black-90 lh-solid washed-blue ph2 pv0 tracked-tight f1">DIGITAL BANKING</span>{" "}
+            <span className="bg-black lh-solid washed-blue ph2 pv0 tracked-tight f1">DIGITAL BANKING</span>{" "}
           </h1>
           <h2 className="pa0 ma0">
-            <span className="bg-black-90 lh-solid washed-blue ph2 pv1 tracked-tight f4">Feature comparison</span>
+            <span className="bg-black lh-solid washed-blue ph2 pv1 tracked-tight f4">Feature comparison</span>
           </h2>
         </header>
         <main>
