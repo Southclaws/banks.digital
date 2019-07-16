@@ -2,9 +2,6 @@ import * as React from "react";
 
 import { getData } from "../src/data";
 
-const YES = "✅";
-const NO = "⛔";
-
 const TableHeader = ({ children }) => (
   <th className="pa0 pv3 rotate-315 fw6 f7" align="center">
     {children}
